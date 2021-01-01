@@ -2,6 +2,13 @@
 
 The Titanic Challenge on Kaggle is a competition in which the task is to predict whether or not a passenger survived the shipwreck. See the full overview here: https://www.kaggle.com/c/titanic/overview
 
+In the Titanic jupyter notebook, I go through the basic steps of a data science pipeline:
+- Exploratory data analysis with visualizations
+- Data cleaning
+- Feature engineering and Preprocessing
+- Modeling
+- Modelfine-tuning
+
 ## Data Dictionary
 
 | Variable	| Definition	| Key |
@@ -58,8 +65,6 @@ I evaluated several models, including Logistic Regression, Random Forest, K Near
 
 ## Conclusions
 
-Because this dataset is observational, we cannot make causal claims from our model. Additionally, due to the voting model and rigorous variable selection, it can be difficult to extract associations from this model. 
-
-We can still make associations based upon data visualizations in the EDA section though. We observed that female passengers, passengers in higher classes, and passengers who traveled in smaller groups (but not alone) were all more likely to survive.
+Because this dataset is observational, we cannot make causal claims from our model. We can still make associations based upon data visualizations in the EDA section though. We observed that female passengers, passengers in higher classes, and passengers who traveled in smaller groups (but not alone) were all more likely to survive.
 
 Ultimately, the model's primary use is for prediction. It cannot be applied directly to future voyages, but it can potentially be compared to other models that predict survival on catostrophic shipwrecks. By feature importances of some of the invidiual models (such as random forest), we can get a sense of how the Titanic made decisions about who should have a spot on the life boat, and whether or not this process makes sense for the future. A future task may be to train a single decision tree classifier to create a distinct set of rules for shipwrecks, but during the actual event, there may be exceptions, of course.
